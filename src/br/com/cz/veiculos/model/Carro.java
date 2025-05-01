@@ -18,6 +18,7 @@ public class Carro extends Veiculo implements ITributavel {
 
     @Override
     public void ligar() {
+        System.out.println("Carro ligado");
 
     }
 

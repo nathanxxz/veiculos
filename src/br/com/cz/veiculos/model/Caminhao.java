@@ -13,6 +13,7 @@ public class Caminhao extends Veiculo implements ITributavel, IManutencao {
 
     @Override
     public void ligar() {
+        System.out.println("Caminhao ligado");
 
     }
 

@@ -29,6 +29,6 @@ public class Caminhao extends Veiculo implements ITributavel, IManutencao {
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString().replaceFirst("Veiculo","Caminhao") + "capacidade de carga=" + " " + this.capacidadeCarga;
     }
 }

@@ -24,8 +24,6 @@ public class Carro extends Veiculo implements ITributavel {
 
     @Override
     public String toString() {
-        return "Carro{" +
-                "numeroDePortas=" + numeroDePortas +
-                '}';
+        return super.toString().replaceFirst("Veiculo","Carro") + " " + " numero de portas=" + this.numeroDePortas;
     }
 }

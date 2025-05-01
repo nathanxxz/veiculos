@@ -28,6 +28,6 @@ public class Moto extends Veiculo implements ITributavel, IManutencao {
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString().replaceFirst("Veiculo","Moto");
     }
 }

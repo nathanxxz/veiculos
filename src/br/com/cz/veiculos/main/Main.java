@@ -31,7 +31,7 @@ public class Main {
                     Motor caminhao=new Motor(250);
                     Proprietario beru= new Proprietario("Beru","18181818181");
                     Caminhao caminhao1=new Caminhao("Scana",4500,caminhao,2005, TipoCombustivelEnum.DIESEL,"2uauau2",beru);
-                    caminhao1.verificarManuntecao();
+                    System.out.println(caminhao1.verificarManuntecao(false));
                     caminhao1.calcularImposto();
                     System.out.println(caminhao1);
                     break;

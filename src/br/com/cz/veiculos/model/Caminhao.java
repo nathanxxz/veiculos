@@ -18,8 +18,16 @@ public class Caminhao extends Veiculo implements ITributavel, IManutencao {
     }
 
     @Override
-    public boolean verificarManuntecao() {
-        return false;
+    public boolean verificarManuntecao(boolean verificador) {
+        if (verificador){
+            System.out.println("Verificando manutencao");
+            return true;
+        }
+        else {
+            System.out.println("Verificacao negada");
+            return false;
+        }
+
     }
 
     @Override

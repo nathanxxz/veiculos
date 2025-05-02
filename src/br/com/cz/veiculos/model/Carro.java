@@ -13,7 +13,7 @@ public class Carro extends Veiculo implements ITributavel {
 
     @Override
     public double calcularImposto() {
-        return -500;
+        return 500;
     }
 
     @Override
@@ -24,6 +24,12 @@ public class Carro extends Veiculo implements ITributavel {
 
     @Override
     public String toString() {
-        return super.toString().replaceFirst("Veiculo","Carro") + " " + " numero de portas=" + this.numeroDePortas;
+        return "Carro{" + "Modelo=" + getModelo() +  "\n" + "Placa=" +
+                getPlaca() +  "\n"  + "Motor=" + getMotor() +  "\n"
+                + "Ano de fabricacao="  + getAnoFabricacao() +  "\n"
+                + "Tipo de combustivel="  + getTipoCombustivelEnum()+  "\n"  +
+                "Proprietario="  + getProprietario() +  "\n"  +
+                "numeroDePortas=" + numeroDePortas +
+                '}';
     }
 }

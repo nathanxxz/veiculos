@@ -23,11 +23,16 @@ public class Moto extends Veiculo implements ITributavel, IManutencao {
 
     @Override
     public double calcularImposto() {
-        return -500;
+        return 500;
     }
 
     @Override
     public String toString() {
-        return super.toString().replaceFirst("Veiculo","Moto");
+       return "Moto{" + "Modelo=" + getModelo() +  "\n" + "Placa=" +
+                getPlaca() +  "\n"  + "Motor=" + getMotor() +  "\n"
+                + "Ano de fabricacao="  + getAnoFabricacao() +  "\n"
+                + "Tipo de combustivel="  + getTipoCombustivelEnum()+  "\n"  +
+                "Proprietario="  + getProprietario() +  "\n" +
+                '}';
     }
 }

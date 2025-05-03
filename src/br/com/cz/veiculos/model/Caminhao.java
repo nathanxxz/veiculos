@@ -11,10 +11,23 @@ public class Caminhao extends Veiculo implements ITributavel, IManutencao {
         this.capacidadeCarga=capacidadeCarga;
     }
 
+    public double getCapacidadeCarga() {
+        return capacidadeCarga;
+    }
+
+    public void setCapacidadeCarga(double capacidadeCarga) {
+        this.capacidadeCarga = capacidadeCarga;
+    }
+
     @Override
     public void ligar() {
         System.out.println("Caminhao ligado");
 
+    }
+
+    @Override
+    public void desligar() {
+        System.out.println("Caminhao desligado");
     }
 
     @Override

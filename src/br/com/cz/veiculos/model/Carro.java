@@ -12,6 +12,10 @@ public class Carro extends Veiculo implements ITributavel, IManutencao {
         this.numeroDePortas=numeroDePortas;
     }
 
+    public int getNumeroDePortas() {
+        return numeroDePortas;
+    }
+
     @Override
     public double calcularImposto() {
         return 500;
@@ -21,6 +25,11 @@ public class Carro extends Veiculo implements ITributavel, IManutencao {
     public void ligar() {
         System.out.println("Carro ligado");
 
+    }
+
+    @Override
+    public void desligar() {
+        System.out.println("Carro desligado");
     }
 
     @Override

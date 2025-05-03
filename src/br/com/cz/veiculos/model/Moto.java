@@ -16,6 +16,11 @@ public class Moto extends Veiculo implements ITributavel, IManutencao {
     }
 
     @Override
+    public void desligar() {
+        System.out.println("Moto desligada");
+    }
+
+    @Override
     public boolean verificarManuntecao(boolean verificador) {
         if (verificador){
             System.out.println("Verificando manutencao");

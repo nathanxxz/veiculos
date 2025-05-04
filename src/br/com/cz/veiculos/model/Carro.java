@@ -16,9 +16,18 @@ public class Carro extends Veiculo implements ITributavel, IManutencao {
         return numeroDePortas;
     }
 
+
     @Override
-    public double calcularImposto() {
-        return 500;
+    public double calcularImposto(double valorVeiculo, double valorAliquota) {
+        if (valorVeiculo>0){
+            double ipva=valorVeiculo*(valorAliquota/100);
+            System.out.printf("Valor de imposto é %.2f:\n", ipva );
+
+        }
+        else{
+            System.out.println("Valores invalidos\n");
+        }
+        return 0;
     }
 
     @Override

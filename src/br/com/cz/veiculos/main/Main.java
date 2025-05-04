@@ -12,7 +12,7 @@ public class Main {
         while (num!=0){
             Scanner sc=new Scanner(System.in);
             System.out.println("=======================  ");
-            System.out.println("    CONCESSIONARIA  ");
+            System.out.println("        VEICULOS         ");
             System.out.println("=======================  ");
             System.out.println();
             System.out.println(" MOSTRAR CAMINHAO [1]\n" +
@@ -33,9 +33,9 @@ public class Main {
                     Caminhao caminhao1=new Caminhao("Scana",4500,caminhao,2005, TipoCombustivelEnum.DIESEL,"2uauau2",beru);
                     caminhao1.ligar();
                     System.out.println(caminhao1.verificarManuntecao(false));
-                    caminhao1.calcularImposto();
                     System.out.println(caminhao1);
                     caminhao1.desligar();
+                    caminhao1.calcularImposto(10.00000,1000);
                     break;
                 case 2:
                     System.out.println("EXIBINDO CARRO\n");
@@ -43,9 +43,9 @@ public class Main {
                     Proprietario Erlon=new Proprietario("Erlon","10101010101");
                     Carro carro1=new Carro("honda Civic",carro,2024,TipoCombustivelEnum.GASOLINA,4,"iwjwjwj",Erlon);
                     carro1.ligar();
-                    carro1.calcularImposto();
                     System.out.println(carro1);
                     carro1.desligar();
+                    carro1.calcularImposto(5000.000,700);
                     break;
                 case 3:
                     System.out.println("EXIBINDO MOTO\n");
@@ -53,9 +53,9 @@ public class Main {
                     Proprietario Ludgero=new Proprietario("Ludgero","11111111111");
                     Moto moto1=new Moto("XJ6",moto,2025,TipoCombustivelEnum.HIBRIDO,"BLAC1K",Ludgero);
                     moto1.ligar();
-                    moto1.calcularImposto();
                     System.out.println(moto1);
                     moto1.desligar();
+                    moto1.calcularImposto(15.000,250);
                     break;
                 case 0:
                     System.out.println("SAINDO DO SISTEMA.....");
